@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/07283258e2.js" crossorigin="anonymous"></script>
+  <!-- icon -->
+  <link rel="icon" href="/icon.png">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Nikhil's Blog</h1>
+    <a id="newPostBtn" href="/new">New Post</a>
+    <ul id="postsList">
+      <% posts.forEach(post=> { %>
+        <li>
+          <h2>
+            <%=post.title%>
+          </h2>
+          <small>
+            <%=post.date %>
+          </small>
+          <p>
+            <%=post.content%>
+          </p>
+          <small>By: <%=post.author%> </small>
+          <a class="edit" href="/edit/<%= post.id %>">Edit</a>
+          <a class="delete" href="/api/posts/delete/<%= post.id %>">Delete</a>
+        </li>
+        <% }); %>
+    </ul>
+  </div>
+  <!-- Footer -->
+  <footer id="footer">
+    <a href="https://www.linkedin.com/in/nikhilkumar99k/" target="_blank" style="background-color: transparent; color: #000;"><i class="iconlast fa-brands fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/nikhilkumar_99k/" target="_blank" style="background-color: transparent; color: #000;"><i class="iconlast fa-brands fa-instagram"></i></a>
+    <a href="https://github.com/nikhilkumar99k" target="_blank" style="background-color: transparent; color: #000;"><i class="iconlast fa-brands fa-github"></i></a>
+    <a href="mailto:guptanikku514@gmail.com" target="_blank" style="background-color: transparent; color: #000;"><i class="iconlast fa-solid fa-envelope"></i></a>
+    <p>© Copyright Nikhil Kumar.</p>
+</footer>
+
+</body>
+
+</html>
