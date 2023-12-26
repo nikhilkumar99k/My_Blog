@@ -65,7 +65,7 @@ This is a simple Node.js and Express.js API for managing a blog. The API support
 - **date:** Date and time when the post was created.
   
 ## Dependencies
-Express.js: Web framework for Node.js.
-Body-parser: Middleware to parse incoming request bodies.
+- Express.js: Web framework for Node.js.
+- Body-parser: Middleware to parse incoming request bodies.
 
 ![sssssss](https://github.com/nikhilkumar99k/My_Blog/assets/91065041/97ab2fb6-0cb9-4ed9-9305-a0f80bf6c59d)
